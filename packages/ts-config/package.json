@@ -1,0 +1,78 @@
+{
+  "name": "@joshdb/ts-config",
+  "version": "1.0.0",
+  "description": "Standard TypeScript config for the Josh Project",
+  "author": "Évelyne Lachance <eslachance@gmail.com> (https://evie.codes/)",
+  "contributors": [
+    "Hezekiah Hendry <hezekiah.hendry@gmail.com>"
+  ],
+  "main": "src/tsconfig.json",
+  "exports": {
+    ".": {
+      "types": "./src/tsconfig.json",
+      "import": "./src/tsconfig.json",
+      "require": "./src/tsconfig.json"
+    },
+    "./base": {
+      "types": "./src/tsconfig.json",
+      "import": "./src/tsconfig.json",
+      "require": "./src/tsconfig.json"
+    },
+    "./decorators": {
+      "types": "./src/decorators.json",
+      "import": "./src/decorators.json",
+      "require": "./src/decorators.json"
+    },
+    "./extra-strict": {
+      "types": "./src/extra-strict.json",
+      "import": "./src/extra-strict.json",
+      "require": "./src/extra-strict.json"
+    },
+    "./verbatim": {
+      "types": "./src/verbatim.json",
+      "import": "./src/verbatim.json",
+      "require": "./src/verbatim.json"
+    },
+    "./bundler": {
+      "types": "./src/bundler.json",
+      "import": "./src/bundler.json",
+      "require": "./src/bundler.json"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "bump": "cliff-jumper",
+    "check-update": "cliff-jumper --dry-run"
+  },
+  "dependencies": {
+    "@sapphire/ts-config": "^5.0.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@favware/cliff-jumper": "^3.0.1",
+    "typedoc": "^0.25.12",
+    "typedoc-json-parser": "^9.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josh-development/utilities.git"
+  },
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=7"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "bugs": {
+    "url": "https://github.com/josh-development/utilities/issues"
+  },
+  "homepage": "https://josh.evie.dev",
+  "publishConfig": {
+    "access": "public"
+  }
+}
